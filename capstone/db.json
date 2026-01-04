@@ -6,7 +6,8 @@
       "studentEmail": "user@sample.com",
       "studentCourse": "BSIT",
       "password": "user",
-      "status": "active"
+      "status": "active",
+      "id": "cb87"
     },
     {
       "studentName": "John Doe",
@@ -14,7 +15,8 @@
       "studentEmail": "johndoe@sample.com",
       "studentCourse": "BSED",
       "password": "johndoe23",
-      "status": "pending"      
+      "status": "pending",
+      "id": "7696"
     }
   ]
 }

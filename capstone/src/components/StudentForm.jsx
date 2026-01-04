@@ -1,11 +1,18 @@
-const StudentForm = () => {
+const StudentForm = ({createStudent, newStudentName, handleStudentName}) => {
   return (
           <div className="registration">
-        <form>
+        <form onSubmit={createStudent}>
           <h1>Student Registration</h1>
           <div className="form-group">
             <label htmlFor="studentName">Full Name</label>
-            <input type="text" name="studentName" id="studentName" required />
+          <input
+            type="text"
+            name="studentName"
+            id="studentName"
+            required
+            value={newStudentName}
+            onChange={handleStudentName}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="studentId">Student ID</label>

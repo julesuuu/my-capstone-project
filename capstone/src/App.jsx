@@ -5,41 +5,64 @@ import './styles.css'
 
 const App = () => {
   const [student, setStudent] = useState([])
-  const [newStudentName, setNewStudentName] = useState('')
+  const [newStudent, setNewStudent] = useState({
+    name: '',
+    lrn: '',
+    email: '',
+    course: '',
+    password: '',
+  })
   
   useEffect(() => {
     studentRegistation
       .getAll()
       .then(initialStudent => {
+        console.log('students:', initialStudent)
         setStudent(initialStudent)
       })
   }, [])
 
   const createStudent = (event) => {
     event.preventDefault()
-    const studentObject = {
-      studentName: newStudentName
+
+    const isDuplicate = student.some(s => s.lrn === newStudent.lrn )
+
+    if (isDuplicate) {
+      alert(`Student with LRN '${newStudent.lrn}' is already registered!`)
+      return
     }
 
     studentRegistation
-      .create(studentObject)
+      .create(newStudent)
       .then((returnedStudent) => {
         setStudent(student.concat(returnedStudent))
-        setNewStudentName('')
+        
+        setStudent({
+          name: '',
+          lrn: '',
+          email: '',
+          course: '',
+          password: '',
+        })
+        console.log('Successfully Registered:', returnedStudent)
       })
   }
 
-  const handleStudentName = (event) => {
-    setNewStudentName(event.target.value)
-    console.log('event', event.target.value)
+  const handleInputChange = (event) => {
+    const { name, value } = event.target
+    
+    setNewStudent({
+      ...newStudent,
+      [name]: value
+    })
   }
 
   return (
     <div>
       <StudentForm
         createStudent={createStudent}
-        newStudentName={newStudentName}
-        handleStudentName={handleStudentName}
+        handleInputChange={handleInputChange}
+        newStudent={newStudent}
       />
     </div>
   )

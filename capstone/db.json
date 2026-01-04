@@ -1,22 +1,22 @@
 {
   "students": [
     {
-      "studentName": "user",
-      "studentId": "1",
-      "studentEmail": "user@sample.com",
-      "studentCourse": "BSIT",
+      "name": "user",
+      "lrn": "12345",
+      "email": "user@sample.com",
+      "course": "BSIT",
       "password": "user",
       "status": "active",
-      "id": "cb87"
+      "id": "1"
     },
     {
-      "studentName": "John Doe",
-      "studentId": "2",
-      "studentEmail": "johndoe@sample.com",
-      "studentCourse": "BSED",
+      "namae": "John Doe",
+      "lrn": "6969",
+      "email": "johndoe@sample.com",
+      "course": "BSED",
       "password": "johndoe23",
       "status": "pending",
-      "id": "7696"
-    }
+      "id": "2"
+    } 
   ]
 }

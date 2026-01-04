@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "studentName": "user",
+      "studentId": "1",
+      "studentEmail": "user@sample.com",
+      "studentCourse": "BSIT",
+      "password": "user",
+      "status": "active"
+    },
+    {
+      "studentName": "John Doe",
+      "studentId": "2",
+      "studentEmail": "johndoe@sample.com",
+      "studentCourse": "BSED",
+      "password": "johndoe23",
+      "status": "pending"      
+    }
+  ]
+}

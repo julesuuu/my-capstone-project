@@ -17,6 +17,22 @@
       "password": "johndoe23",
       "status": "pending",
       "id": "2"
-    } 
+    },
+    {
+      "id": "9f1b",
+      "name": "Julius Ramos De Perio",
+      "lrn": "434",
+      "email": "julesrdeperio@gmail.com",
+      "course": "BSIT",
+      "password": "mewomowe"
+    },
+    {
+      "id": "2f09",
+      "name": "user",
+      "lrn": "657",
+      "email": "julesrdeperio@gmail.com",
+      "course": "BSIT",
+      "password": "sadasd"
+    }
   ]
 }

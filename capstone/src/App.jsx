@@ -36,7 +36,8 @@ const App = () => {
       .create(newStudent)
       .then((returnedStudent) => {
         setStudent(student.concat(returnedStudent))
-        
+        console.log('Successfully Registered:', returnedStudent)
+        console.log('Students', student)
         setStudent({
           name: '',
           lrn: '',
@@ -44,7 +45,6 @@ const App = () => {
           course: '',
           password: '',
         })
-        console.log('Successfully Registered:', returnedStudent)
       })
   }
 

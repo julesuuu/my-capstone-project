@@ -53,9 +53,10 @@ const StudentForm = ({ createStudent, handleInputChange, newStudent
           >
             <option value="" disabled>-- Select a course --</option>
             <option value="BSIT">BS Information Technology</option>
-            <option value="BSCS">BS Computer Science</option>
-            <option value="BSEE">BS Electrical Engineering</option>
-            <option value="BSIS">BS Information Systems</option>
+            <option value="BSC">BS Criminology</option>
+            <option value="BSA">BS Accountancy</option>
+            <option value="BSED">BS Education</option>
+            <option value="BSHM">BS Hospitality Management</option>
           </select>
           </div>
           <div className="form-group">
